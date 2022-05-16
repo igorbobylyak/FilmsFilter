@@ -1,0 +1,10 @@
+<div class="search">
+    <app-search (searchEmitter)="filterFilms($event)"></app-search>
+</div>
+<div class="films-container">
+    <app-film 
+        *ngFor="let film of films"
+        [film]="film"
+    >
+    </app-film>
+</div>

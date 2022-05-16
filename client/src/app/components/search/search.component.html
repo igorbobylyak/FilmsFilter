@@ -1,0 +1,13 @@
+<div class="search-container">
+    <div class="form-group">
+        <input
+            [(ngModel)]="search"
+            (ngModelChange)="filterFilms()"
+            type="text" 
+            name="film" 
+            id="film" 
+            class="form-control" 
+            placeholder="Filter"
+        >
+    </div>
+</div>
